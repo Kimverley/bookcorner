@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Flexbox Project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contain{
+            margin-left: 100px;
+             height: 100vh;
+
+             color: rgb(255, 255, 255);
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border-radius: 20px;
+        }
+        .item1{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(18, 106, 183);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             font-size: bold;
+            
+
+        }
+
+        .item1, h1 {
+            
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+        }
+        .emoji{
+            padding: 20px;
+            border-radius: 50px;
+            margin: 10px;
+            background: linear-gradient( to right, rgb(255, 115, 0), rgb(255, 72, 0));
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+            font-size: 25px;
+        }   
+        .item2{
+            width: 400px;
+            height: 400px;
+            color: rgb(0, 0, 0);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border: 1px solid white;
+            background-color: white;
+              display: flex;
+             flex-direction: column;
+             text-align: center;
+            padding: 10px;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        .list{
+            text-align: center;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            background: linear-gradient(to right, rgb(84, 203, 84), green);
+            font-size: 18px;
+            margin-top: 15px;
+            box-shadow: 0px 10px 10px rgba(0, 128, 0, 0.194);
+        }
+        .store{
+            border-radius: 15px;
+            padding-top: 10px ;
+            padding-bottom: 20px;
+            color: white;
+             box-shadow: 0px 10px 10px rgba(255, 106, 0, 0.302) ;
+        }
+        .cap{
+             font-weight: bold;
+             text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.227);
+             
+        }
+        .cap,
+        .store{ 
+            margin: 10px;
+            font-size: 20px ;
+             background-color: orange;
+            background: linear-gradient(to right, rgb(255, 166, 0) , rgb(255, 128, 0));
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+      <div class="item1">
+        <h1>BookCorner</h1>
+        <p>Your Reading Haven</p>
+        <p class="emoji">📚</p>
+      </div>
+
+    <div class="item2">
+        <h2>Our services</h1>
+                <!-- list -->
+               <ul>
+                 <li  class="list">New & Used Books</li>
+                <li  class="list">Reading Corner cafe</li>
+                <li  class="list">Book Club Events</li>
+               </ul>
+    <!-- Store Block -->    
+       <div class="store">
+        <p class="cap">Visit our store</p>
+  
+        <p>456 Library Avenue</p>
+       </div>
+    </div>
+    </div>
+</body>
+</html>
